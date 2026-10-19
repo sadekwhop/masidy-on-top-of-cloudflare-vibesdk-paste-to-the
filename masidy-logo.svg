@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="masidy-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d5bff"/>
+      <stop offset="50%" stop-color="#7047ff"/>
+      <stop offset="100%" stop-color="#00c6ff"/>
+    </linearGradient>
+    <linearGradient id="glow-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd6e7"/>
+      <stop offset="50%" stop-color="#d5dcff"/>
+      <stop offset="100%" stop-color="#ffe3c7"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#2d5bff" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Square Container -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#masidy-grad)" filter="url(#soft-shadow)"/>
+  
+  <!-- Subtle Internal Overlay -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="none" stroke="#ffffff" stroke-opacity="0.2" stroke-width="4"/>
+
+  <!-- Geometric Abstract Arabic "م" (Mim) + AI Sparkle Icon -->
+  <g transform="translate(136, 128)" fill="#ffffff">
+    <!-- Main Mim Loop -->
+    <path d="M120,40 C160,40 192,72 192,112 C192,152 160,184 120,184 C80,184 48,152 48,112 C48,72 80,40 120,40 Z M120,80 C102.3,80 88,94.3 88,112 C88,129.7 102.3,144 120,144 C137.7,144 152,129.7 152,112 C152,94.3 137.7,80 120,80 Z" />
+    
+    <!-- Mim Extension Tail / Wave -->
+    <path d="M120,184 C180,184 220,210 240,256 L200,256 C185,225 155,216 120,216 Z" />
+    
+    <!-- AI Sparkle (Top Left Accent) -->
+    <path d="M40,24 C40,48 16,64 0,64 C16,64 40,80 40,104 C40,80 64,64 80,64 C64,64 40,48 40,24 Z" fill="url(#glow-grad)"/>
+    <path d="M200,16 C200,32 184,42 172,42 C184,42 200,52 200,68 C200,52 216,42 228,42 C216,42 200,32 200,16 Z" fill="#ffffff" opacity="0.9"/>
+  </g>
+</svg>

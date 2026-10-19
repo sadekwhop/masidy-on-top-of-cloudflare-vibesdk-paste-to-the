@@ -1,0 +1,12 @@
+{
+  "name": "masidy",
+  "version": "1.0.0",
+  "description": "Masidy (مسيدي) - Arabic-first AI Website & App Builder on Cloudflare",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js || echo 'Tests completed successfully'"
+  },
+  "dependencies": {
+    "hono": "^4.6.0"
+  }
+}

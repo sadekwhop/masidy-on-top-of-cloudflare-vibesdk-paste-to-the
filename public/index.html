@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مسيدي (Masidy) — منصة بناء المواقع والتطبيقات بالذكاء الاصطناعي</title>
+  <meta name="description" content="منصة مسيدي (Masidy): ابني موقعك الإلكتروني أو تطبيقك بالذكاء الاصطناعي في ثوانٍ باللغة العربية. خطة عمل موثوقة، معاينة حية، ونشر بنقرة واحدة." />
+
+  <!-- Favicon & Touch Icons -->
+  <link rel="icon" type="image/svg+xml" href="/masidy-logo.svg" />
+  <link rel="apple-touch-icon" href="/masidy-logo.svg" />
+
+  <!-- Fonts & Styles -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['IBM Plex Sans Arabic', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            bg: '#fbfbfd',
+            card: '#ffffff',
+            ink: '#0b0f1a',
+            muted: '#667085',
+            line: '#e6e8ee',
+            brand: {
+              DEFAULT: '#2d5bff',
+              hover: '#1e46e6',
+              light: '#eef2ff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Importmap for React & Lucide -->
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.3.1",
+      "react/jsx-runtime": "https://esm.sh/react@18.3.1/jsx-runtime",
+      "react-dom": "https://esm.sh/react-dom@18.3.1",
+      "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+      "lucide-react": "https://esm.sh/lucide-react@0.400.0?external=react,react-dom"
+    }
+  }
+  </script>
+
+  <!-- Babel Standalone for React compilation -->
+  <script src="https://unpkg.com/@babel/standalone@7.24.0/babel.min.js"></script>
+</head>
+<body class="bg-bg text-ink font-sans antialiased min-h-screen">
+  <div id="root"></div>
+
+  <!-- Application Bundle Script -->
+  <script type="text/babel" data-type="module" data-presets="react" src="./app.js"></script>
+</body>
+</html>
